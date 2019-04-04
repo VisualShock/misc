@@ -1,0 +1,56 @@
+<div class="left-section">
+	<div class="section-content">
+		<h1><%- fullName %></h1>
+		<div class="user-photo">
+			<img src="./images/profile.jpg" alt="">
+		</div>
+
+		<% if (menu) { %>
+			<div class="user-menu">
+				<ul>
+				<% menu.forEach(item => { %>
+					<li><a href="#"><%- item.linkText %> <%- fullName %></a></li>
+				<% }) %>
+				</ul>
+			</div>
+		<% } %>
+	</div>
+</div>
+
+<div class="content">
+	<h2><%- wallTitle %></h2>
+
+	<% if (articles) { %>
+		<div class="user-menu">
+			<ul>
+			<% articles.forEach(article => { %>
+				<div class="article">
+					<h4><%- article.title %></h4>
+			
+					<p><%- article.content %></p>
+				</div>
+			<% }) %>
+			</ul>
+		</div>
+	<% } %>
+</div>
+
+<div class="right-section">
+	<div class="section-content">
+		<% if (friends) { %>
+		<div class="friends-widget">
+			<h3><%- friendsWidgetTitle %></h3>
+			<ul>
+				<% friends.forEach(friend => { %>
+					<li>
+						<div class="friend">
+							<img src="./images/profile.jpg" alt="">
+							<span><%- friend.name %></span>
+						</div>
+					</li>
+				<% }) %>
+			</ul>
+		</div>
+		<% } %>
+	</div>
+</div>

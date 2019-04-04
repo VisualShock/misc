@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "lodash": "^4.17.11"
+  }
+}
