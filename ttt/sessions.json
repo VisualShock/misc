@@ -1,0 +1,13 @@
+{
+	"sessions": [
+		{
+			"id": "1",
+			"users": [
+				{"name": "Ivan", "mark": "tic"},
+				{"name": "Denis", "mark": "tac"}
+			],
+			"cells": [0,0,0,0,0,0,0,0,0],
+			"timestamp": 1555254163932
+		}
+	]
+}
